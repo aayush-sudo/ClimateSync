@@ -1,0 +1,104 @@
+body {
+  background-color: #a2e9bbdd; 
+  font-family: 'Arial', sans-serif;
+}
+
+header {
+  background-color: rgba(22, 25, 28, 0.84) !important;
+  /* color: #ffffff !important; */
+  padding: 15px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-right: 20px;
+}
+
+header nav ul li a {
+  color: #ffffff !important;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: border-radius 0.3s ease;
+  padding: 10px 15px;
+}
+
+header nav ul li a:hover {
+  background: rgba(93, 93, 93, 0.6);
+  border-radius: 20px;
+}
+
+.container {
+  max-width: 700px;
+  background: #ffffff;
+  padding: 20px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  align-self: center;
+}
+
+
+.progress-bar {
+  height: 15px;
+  background-color: #4285F4; 
+  border-radius: 3px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+label.required::after {
+  content: "*";
+  color: red;
+}
+
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+input:focus, select:focus {
+  border-color: #4285F4;
+  outline: none;
+  box-shadow: 0 0 5px rgba(66, 133, 244, 0.3);
+}
+
+button {
+  background-color: #4285F4;
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #357ae8;
+}

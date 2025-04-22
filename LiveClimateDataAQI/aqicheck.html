@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Air Quality Index Checker</title>
+
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>ClimateSync</h1>
+    <nav>
+      <ul>
+        <li><a href="../HomePage/homepage.php">Home</a></li>
+        <li><a href="../contact/contact.php">Contact</a></li>
+        <li><a href="../Awareness/Awareness.html">Awareness</a></li>
+        <li><a href="../SustainablePractices/sustainable.php">Sustainable Practices</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Air Quality Index (AQI) Checker</h2>
+    <p>Enter City Name to check the Air Quality Index.</p>
+
+    <input type="text" id="cityInput" placeholder="Example : Thane, Mumbai, Delhi" />
+    <button class="btn-check-aqi" onclick="fetchAQI()">Check AQI</button>
+
+    <div id="result"></div>
+
+    <div id="aqiSliderContainer">
+      <div id="aqiScale"></div>
+      <div id="aqiPointer"></div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 ClimateSync. Mini project.
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

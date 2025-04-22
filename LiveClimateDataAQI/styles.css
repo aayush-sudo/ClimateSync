@@ -1,0 +1,180 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    background-image: url('../backgrounds/aqibg.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: -1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover {
+    background: #2193b0;
+}
+
+.container {
+    position: relative;
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.6);
+    margin: 50px auto;
+    color: #fff;
+}
+
+h2 {
+    font-weight: bold;
+    color: #fff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #333;
+    margin-top: 10px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #6dd5ed;
+}
+
+.btn-check-aqi {
+    margin-top: 15px;
+    width: 100%;
+    background: #2193b0;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-check-aqi:hover {
+    background: #1a7d9c;
+}
+
+.result-card {
+    margin-top: 20px;
+    padding: 15px;
+    background: #eef;
+    border-left: 5px solid #007bff;
+    border-radius: 8px;
+    color: #333;
+}
+
+.result-card h4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.result-card p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+#temperature {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+#aqiSliderContainer {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    height: 30px;
+    margin: 30px auto 10px;
+}
+
+#aqiScale {
+    width: 100%;
+    height: 20px;
+    background: linear-gradient(to right,
+    #00e400 0%,     
+    #ffff00 16.6%,   
+    #ff7e00 33.3%,   
+    #ff0000 50%,      
+    #8f3f97 66.6%,    
+    #7e0023 100%      
+);
+
+    border-radius: 5px;
+}
+
+#aqiPointer {
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: 40px;
+    background: white;
+    left: -9999px; 
+    transition: left 0.3s ease;
+}
